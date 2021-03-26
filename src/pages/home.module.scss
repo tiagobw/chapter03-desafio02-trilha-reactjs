@@ -1,1 +1,49 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.innerContainer {
+  max-width: 720px;
+  margin: 5rem auto;
+
+  button {
+    border: none;
+    background: none;
+    color: var(--pink);
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+}
+
+.posts {
+  margin: 4.05125rem 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 3.125rem;
+    }
+
+    strong {
+      display: block;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 2.118125rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    > p {
+      color: var(--gray-250);
+      margin-bottom: 1.5625rem;
+      font-size: 1.125rem;
+    }
+
+    &:hover strong {
+      color: var(--pink);
+    }
+  }
+}

@@ -1,1 +1,23 @@
-// TODO
+.iconsAndTextsOuterContainer {
+  display: flex;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+.iconAndTextContainer {
+  display: flex;
+  align-items: center;
+
+  + .iconAndTextContainer {
+    margin-left: 1.916875rem;
+  }
+
+  p,
+  time {
+    margin-left: 0.65625rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+}
