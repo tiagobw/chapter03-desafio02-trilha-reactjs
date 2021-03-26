@@ -21,3 +21,29 @@
     font-size: 1.3rem;
   }
 }
+
+.previewButton {
+  max-width: 720px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  background: var(--gray-100);
+  color: var(--gray-1000);
+  transition: filter 0.3s;
+
+  .anchorContainer {
+    width: 100%;
+    padding: 1.125rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.96);
+  }
+}
+

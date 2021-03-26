@@ -13,7 +13,7 @@
 
 .post {
   max-width: 720px;
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
 
   h1 {
     font-size: 3rem;
@@ -49,4 +49,70 @@
       color: var(--pink);
     }
   }
+
+  .editedDate {
+    font-size: 0.875rem;
+    margin-top: 1.125rem;
+    color: var(--gray-500);
+    font-weight: 400;
+  }
+}
+
+.horizontalLine {
+  max-width: 720px;
+  margin: 3.75rem auto;
+  display: block;
+  height: 0;
+  border: 0;
+  opacity: 0.2;
+  border-top: 1px solid var(--gray-250);
+
+  &.transparent {
+    opacity: 0;
+  }
+}
+
+.prevNextContainer {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 720px;
+  margin-bottom: 6.5rem;
+}
+
+.prevNextButton {
+  position: absolute;
+  left: 0;
+
+  transition: filter 0.3s;
+
+  h3 {
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--pink);
+  }
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.prevNextButtonRight {
+  left: auto;
+  right: 0;
+
+  p {
+    text-align: right;
+  }
+}
+
+.utteranceContainer {
+  max-width: 720px;
+  margin: 0 auto;
 }
