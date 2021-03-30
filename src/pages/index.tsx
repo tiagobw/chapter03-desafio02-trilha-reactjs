@@ -160,6 +160,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async ({
       postsPagination,
       preview,
     },
-    redirect: 60 * 60 * 24, // 24 hours
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
