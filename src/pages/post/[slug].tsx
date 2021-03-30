@@ -274,6 +274,6 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({
       prevPost,
       nextPost,
     },
-    redirect: 60 * 60 * 24, // 24 hours
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
